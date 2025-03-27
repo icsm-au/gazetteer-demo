@@ -1,0 +1,135 @@
+PREFIX auslang: <https://linked.data.gov.au/dataset/auslang>
+PREFIX auslangs: <https://linked.data.gov.au/dataset/auslang/>
+PREFIX cn: <https://linked.data.gov.au/def/cn/>
+PREFIX ex: <http://example.com/>
+PREFIX geo: <http://www.opengis.net/ont/geosparql#>
+PREFIX gn: <https://linked.data.gov.au/def/gn/>
+PREFIX gnstatus: <https://linked.data.gov.au/def/gn-statuses/>
+PREFIX gocat: <https://linked.data.gov.au/def/go-categories/>
+PREFIX gpt: <https://linked.data.gov.au/def/gn-part-types/>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX time: <http://www.w3.org/2006/time#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+
+<https://linked.data.gov.au/dataset/qldgn/52245>
+    a gn:GeographicalName ;
+    cn:isNameFor <http://example.com/geographical-object/y> ;
+    schema:hasPart [
+        schema:additionalType gpt:geographicalGivenName ;
+        schema:value "K'gari" ;
+    ] ;
+    cn:hasLifecycleStage [
+        schema:additionalType gnstatus:Gazetted ;
+        time:hasBeginning [ time:inXSDDate "2023-06-07"^^xsd:date ; ] ;
+    ] ;
+    skos:historyNote """Consultation with Butchulla elders has determined that pronunciation and spelling will vary among different family groups. Both pronunciations 'GUR-rie' and 'Gurri' are commonly accepted and used.
+
+'Gari' is also a recognised alternative spelling from the Badtjala Language. (Ref: Badtjala Word List by Wondunna Aboriginal Corporation, 1996, p160).
+
+Initially named Frazer's Island on 10 May 1842 by Henry Stuart Russell (refer: H.S. Russell, Exploring Excursions in Australia, The Journal of the Royal Geographical Society of London, vol 15, 1845, pp305-327), after James Fraser (1776?-1836) master mariner, whose ship Stirling Castle was wrecked in the Swain Reefs area on 22 May 1836.","K'gari is the Butchulla Peoples' traditional name for the island. The name K'gari comes from the creation story of the island, which has been passed down orally for generations between the traditional owners of the surrounding land and waters, the Butchulla People.
+
+K'gari is the name of the white spirit that was sent down from the sky by the god Beeral, to help his messenger Yindingie make the land and seas that are home to the Butchulla People.
+
+To fully understand the origins of the proposed place name of K'gari, the following two texts retell the creation story in its traditional context, along with artwork that is used when passing this cultural knowledge on between generations: (1) K'gari: the Creation of Fraser Island authored and illustrated by Nai Nai Bird (2019) and published by Cengage; and (2) Legends of Fraser Island authored by Olga Miller and illustrated by Nai Nai Bird (1994) and published by Rigby Heinemann.""" ;
+    schema:dateModified "2021-08-06T08:33:55"^^xsd:dateTime ;
+    ex:nameTemplate "{geographicalGivenName}" ;
+.
+
+<https://linked.data.gov.au/dataset/qldgn/52245>
+    a gn:GeographicalName ;
+    cn:isNameFor <http://example.com/geographical-object/y> ;
+    schema:hasPart [
+        schema:additionalType gpt:geographicalGivenName ;
+        schema:value "Gari"^^auslangs:E30 ;  # Butchulla - https://collection.aiatsis.gov.au/austlang/language/E30
+    ] ;
+    cn:hasLifecycleStage [
+        schema:additionalType gnstatus:Gazetted ;
+        time:hasBeginning [ time:inXSDDate "2023-06-07"^^xsd:date ; ] ;
+    ] ;
+    skos:historyNote """Consultation with Butchulla elders has determined that pronunciation and spelling will vary among different family groups. Both pronunciations 'GUR-rie' and 'Gurri' are commonly accepted and used.
+
+'Gari' is also a recognised alternative spelling from the Badtjala Language. (Ref: Badtjala Word List by Wondunna Aboriginal Corporation, 1996, p160).
+
+Initially named Frazer's Island on 10 May 1842 by Henry Stuart Russell (refer: H.S. Russell, Exploring Excursions in Australia, The Journal of the Royal Geographical Society of London, vol 15, 1845, pp305-327), after James Fraser (1776?-1836) master mariner, whose ship Stirling Castle was wrecked in the Swain Reefs area on 22 May 1836.","K'gari is the Butchulla Peoples' traditional name for the island. The name K'gari comes from the creation story of the island, which has been passed down orally for generations between the traditional owners of the surrounding land and waters, the Butchulla People.
+
+K'gari is the name of the white spirit that was sent down from the sky by the god Beeral, to help his messenger Yindingie make the land and seas that are home to the Butchulla People.
+
+To fully understand the origins of the proposed place name of K'gari, the following two texts retell the creation story in its traditional context, along with artwork that is used when passing this cultural knowledge on between generations: (1) K'gari: the Creation of Fraser Island authored and illustrated by Nai Nai Bird (2019) and published by Cengage; and (2) Legends of Fraser Island authored by Olga Miller and illustrated by Nai Nai Bird (1994) and published by Rigby Heinemann.""" ;
+    schema:dateModified "2021-08-06T08:33:55"^^xsd:dateTime ;
+    ex:nameTemplate "{geographicalGivenName}" ;
+.
+
+<https://linked.data.gov.au/dataset/qldgn/47533>
+    a gn:GeographicalName ;
+    cn:isNameFor <http://example.com/geographical-object/y> ;
+    schema:hasPart [
+        schema:additionalType gpt:geographicalGivenName ;
+        schema:value "Fraser" ;
+    ] ;
+    cn:hasLifecycleStage [
+        schema:additionalType gnstatus:Retired ;
+        time:hasBeginning [ time:inXSDDate "2023-06-07"^^xsd:date ; ] ;
+    ] ,
+    [
+        schema:additionalType gnstatus:Gazetted ;
+        time:hasBeginning [ time:inXSDDate "2011-07-01"^^xsd:date ; ] ;
+        time:hasEnd [ time:inXSDDate "2023-06-07"^^xsd:date ; ] ;
+    ] ;
+    skos:historyNote """The Minister's 1 July 2011 decision included recognition of K'gari and Gari as alternative names. ""K'gari"" an Aboriginal name, Butchulla Language, for Fraser Island (Ref: Dictionary of the Butchulla Language by J Bell, 2004, p143) and "Gari" an Aboriginal name, Badtjala Language, for Fraser Island. (Ref: Badtjala Word List by Wondunna Aboriginal Corporation, 1996, p160).
+
+After James Fraser (1776?-1836) master mariner, whose ship Stirling Castle was wrecked in the Swain Reefs area on 22 May 1836. Fraser died in early August 1836 on the Island which carries his name, after being speared by one of the group of Aboriginal people which Fraser, his wife and two crew had joined (Refer F. Williams, Written in sand: a history of Fraser Island, Brisbane, 1982, pp34-41).
+
+First named Frazer's Island on 10 May 1842 by Henry Stuart Russell (refer: H.S. Russell, Exploring Excursions in Australia, The Journal of the Royal Geographical Society of London, vol 15, 1845, pp305-327). Russell (1818-1889), who was a pastoralist, historian and politician, popularised the use of Fraser Island as a name (refer: H.S. Russell, Genesis of Queensland, Sydney, 1888, p259). Name approved and alternative names recognised by the Minister for Finance, Natural Resources and The Arts, 1 July 2011.
+
+Exploring Excursions in Australia: https://www.jstor.org/stable/1797911, The Genesis of Queensland: https://www.textqueensland.com.au/item/book/b86c5755be236c74a8fc29e7ae220cb6""" ;
+    schema:dateModified "2023-06-07"^^xsd:date ;
+    ex:nameTemplate "{geographicalGivenName} {geographicalObjectCategory}" ;
+.
+
+
+<https://linked.data.gov.au/dataset/qldgn/13160>
+    a gn:GeographicalName ;
+    cn:isNameFor <http://example.com/geographical-object/y> ;
+    schema:hasPart [
+        schema:additionalType gpt:geographicalGivenName ;
+        schema:value "FRASER" ;
+    ] ;
+    cn:hasLifecycleStage [
+        schema:additionalType gnstatus:Retired ;
+        time:hasBeginning [ time:inXSDDate "2011-07-01"^^xsd:date ; ] ;
+    ] ,
+    [
+        schema:additionalType gnstatus:Gazetted ;
+        time:hasEnd [ time:inXSDDate "2011-07-01"^^xsd:date ; ] ;
+    ] ;
+    skos:historyNote """Sometimes spelt Frazer, the island is also known variously as Great Sandy Island, Fraser is the common spelling.
+
+Taking its name from James Fraser (1776?-1836) master mariner, whose ship Stirling Castle was wrecked in the Swain Reefs area on 22 May 1836. Fraser died in early August 1836 on the Island which carries his name, after being speared by one of the group of Aboriginal people which Fraser, his wife and two crew had joined (refer: F. Williams, Written in sand: a history of Fraser Island, Brisbane, 1982, pp34-41).
+
+First named Frazer's Island on 10 May 1842 by Henry Stuart Russell (refer: H.S. Russell, Exploring Excursions in Australia, The Journal of the Royal Geographical Society of London, vol 15, 1845, pp305-327). Russell (1818-1889), who was a pastoralist, historian and politician, popularised the use of Fraser Island as a name (refer: H.S. Russell, Genesis of Queensland, Sydney, 1888, p259).
+
+Exploring Excursions in Australia: https://www.jstor.org/stable/1797911, The Genesis of Queensland: https://www.textqueensland.com.au/item/book/b86c5755be236c74a8fc29e7ae220cb6""" ;
+    schema:dateModified "2011-07-25"^^xsd:date ;
+    ex:nameTemplate "{geographicalGivenName} {geographicalObjectCategory}" ;
+.
+
+<http://example.com/geographical-object/y>
+    a geo:Feature ;
+    schema:additionalType gocat:island ;
+    geo:hasGeometry [
+        geo:asWKT "POINT(153.144440000000003 -25.248060000000002)"^^geo:wktLiteral ;
+    ] ;
+.
+
+auslang:E82
+    a skos:Concept ;
+    skos:inScheme auslangs: ;
+    skos:prefLabel "Wapabara" ;
+    skos:notation "E82"^^auslang:langcode ;
+    skos:definition "This is a dialect of Dharumbal E46 according to Terrill (2002:13). Documentation on Dharumbal E46 may be relevant." ;
+    schema:citation
+        "https://collection.aiatsis.gov.au/austlang/language/e82"^^xsd:anyURI ,
+        "Terrill, Angela. 2002. Dharumbal: the language of Rockhampton, Australia: Pacific Linguistics 525. Canberra: Pacific Linguistics." ;
+.

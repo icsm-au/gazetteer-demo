@@ -1,0 +1,61 @@
+PREFIX auslang: <https://linked.data.gov.au/dataset/auslang>
+PREFIX auslangs: <https://linked.data.gov.au/dataset/auslang/>
+PREFIX cn: <https://linked.data.gov.au/def/cn/>
+PREFIX ex: <http://example.com/>
+PREFIX geo: <http://www.opengis.net/ont/geosparql#>
+PREFIX gn: <https://linked.data.gov.au/def/gn/>
+PREFIX gnstatus: <https://linked.data.gov.au/def/gn-statuses/>
+PREFIX gocat: <https://linked.data.gov.au/def/go-categories/>
+PREFIX gpt: <https://linked.data.gov.au/def/gn-part-types/>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX time: <http://www.w3.org/2006/time#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+
+<https://linked.data.gov.au/dataset/qldgn/13160>
+    a gn:GeographicalName ;
+    cn:isNameFor <http://example.com/geographical-object/y> ;
+    schema:hasPart [
+        schema:additionalType gpt:geographicalGivenName ;
+        schema:value "Peregian Springs" ;
+    ] ;
+    cn:hasLifecycleStage [
+        schema:additionalType gnstatus:Gazetted ;
+        time:hasBeginning [ time:inXSDDate "2014-11-28"^^xsd:date ; ] ;
+    ] ;
+    skos:historyNote "Named and bounded by the Minister for Natural Resources and Mines 13 January 2006. The area was previously part of Peregian Beach (Maroochy Shire). Regazetted by the Minister for Natural Resources and Water 4 July 2008. Regazetted as a suburb by the Minister for Natural Resources, Mines and Energy and Minister for Trade on the 19 November 2010 due to the council amalgamations under the Local Government Reform Implementation Act 2007. The boundary separating Peregian Springs and Peregian Beach was amended by notification on 10 January 2014 vide CHQ022459/850. Re-gazetted on 10 January 2014 due to council de-amalgamations under the Local Government (De-amalgamation Implementation) Regulation 2013. Boundary between Peregian Beach and Peregian Springs amended vide CHQ022459/961 effective 13 October 2014." ;
+    schema:dateModified "2014-12-01"^^xsd:date ;
+    ex:nameTemplate "{geographicalGivenName}" ;
+.
+
+<https://linked.data.gov.au/dataset/qldgn/13160>
+    a gn:GeographicalName ;
+    cn:isNameFor <http://example.com/geographical-object/y> ;
+    schema:hasPart [
+        schema:additionalType gpt:geographicalGivenName ;
+        schema:value "PEREGIAN SPRINGS" ;
+    ] ;
+    cn:hasLifecycleStage [
+        schema:additionalType gnstatus:Retired ;
+        time:hasBeginning [ time:inXSDDate "2014-11-28"^^xsd:date ; ] ;
+    ] ,
+    [
+        schema:additionalType gnstatus:Gazetted ;
+        time:hasBeginning [ time:inXSDDate "2014-01-10"^^xsd:date ; ] ;
+        time:hasEnd [ time:inXSDDate "2014-11-28"^^xsd:date ; ] ;
+    ] ;
+    skos:historyNote "Named and bounded by the Minister for Natural Resources and Mines, 13 January 2006. The area was previously part of Peregian Beach (Maroochy Shire). Regazetted by the Minister for Natural Resources and Water 4 July 2008. Regazetted as a suburb by the Minister for Natural Resources, Mines and Energy and Minister for Trade on the 19 November 2010 due to the council amalgamations under the Local Government Reform Implementation Act 2007. The boundary separating Peregian Springs and Peregian Beach was amended by notification on 10 January 2014 vide CHQ022459/850. Re-gazetted on the 10 January 2014 due to council de-amalgamations under the Local Government (De-amalgamation Implementation) Regulation 2013." ;
+    schema:dateModified "2014-12-01"^^xsd:date ;
+    ex:nameTemplate "{geographicalGivenName}" ;
+.
+
+<http://example.com/geographical-object/z>
+    a geo:Feature ;
+    schema:additionalType gocat:suburb ;  # there is no Suburb in https://linked.data.gov.au/def/go-categories
+    geo:hasGeometry [
+        geo:asWKT "POINT(153.071110000000004 -26.493610000000000)"^^geo:wktLiteral ;
+    ] ;
+.
+
+# TODO: differentiat the two Peregian Beaches

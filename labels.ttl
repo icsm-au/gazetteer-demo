@@ -1,0 +1,237 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX geo: <http://www.opengis.net/ont/geosparql#>
+PREFIX prof: <http://www.w3.org/ns/dx/prof/>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX time: <http://www.w3.org/2006/time#>
+
+dcterms:conformsTo
+    schema:description "An established standard to which the described resource conforms."@en ;
+    schema:name "Conforms To"@en ;
+.
+
+<http://purl.org/linked-data/registry#status>
+    schema:description "The status of this register entry"@en ;
+    schema:name "status"@en ;
+.
+
+geo:Feature
+    schema:description
+        "A discrete spatial phenomenon in a universe of discourse"@en ,
+        "A discrete spatial phenomenon in a universe of discourse."@en ;
+    schema:name
+        "Feature" ,
+        "Feature"@en ;
+.
+
+geo:asWKT
+    schema:description "The WKT serialization of a Geometry"@en ;
+    schema:name "as WKT"@en ;
+.
+
+geo:hasGeometry
+    schema:description "A spatial representation for a given Feature."@en ;
+    schema:name "has geometry"@en ;
+.
+
+skos:Concept
+    schema:description
+        """A SKOS concept can be viewed as an idea or notion; a unit of thought. However, what constitutes a unit of thought is subjective, and this definition is meant to be suggestive, rather than restrictive.
+
+The notion of a SKOS concept is useful when describing the conceptual or intellectual structure of a knowledge organization system, and when referring to specific ideas or meanings established within a KOS.
+
+Note that, because SKOS is designed to be a vehicle for representing semi-formal KOS, such as thesauri and classification schemes, a certain amount of flexibility has been built in to the formal definition of this class."""@en ,
+        "An idea or notion; a unit of thought"@en ,
+        "An idea or notion; a unit of thought."@en ;
+    schema:name
+        "Concept" ,
+        "Concept"@en ,
+        "concept"@en ;
+.
+
+skos:definition
+    schema:description "A statement or formal explanation of the meaning of a concept."@en ;
+    schema:name "definition"@en ;
+.
+
+skos:historyNote
+    schema:description "A note about the past state/use/meaning of a concept."@en ;
+    schema:name "history note"@en ;
+.
+
+skos:inScheme
+    schema:description
+        "Relates a resource (for example a concept) to a concept scheme in which it is included."@en ,
+        "This property expresses the fact that a concept is a part of a scheme."@en ;
+    schema:name "is in scheme"@en ;
+.
+
+skos:notation
+    schema:description "A notation, also known as classification code, is a string of characters such as \"T58.5\" or \"303.4833\" used to uniquely identify a concept within the scope of a given concept scheme."@en ;
+    schema:name "notation"@en ;
+.
+
+skos:prefLabel
+    schema:description "The preferred lexical label for a resource, in a given language."@en ;
+    schema:name "preferred label"@en ;
+.
+
+time:hasBeginning
+    schema:description "Beginning of a temporal entity."@en ;
+    schema:name "has beginning"@en ;
+.
+
+time:hasEnd
+    schema:description "End of a temporal entity."@en ;
+    schema:name "has end"@en ;
+.
+
+time:inXSDDate
+    schema:description "Position of an instant, expressed using xsd:date"@en ;
+    schema:name "in XSD date"@en ;
+.
+
+prof:hasArtifact
+    schema:description "The URL of a downloadable file with particulars such as its format and role indicated by the Resource Descriptor"@en ;
+    schema:name "has artifact" ;
+.
+
+prof:hasResource
+    schema:description "A resource which describes the nature of an artifact and the role it plays in relation to the Profile"@en ;
+    schema:name "has resource"@en ;
+.
+
+prof:hasRole
+    schema:description "The function of an artifact described by a Resource Descriptor, such as specification, guidance etc."@en ;
+    schema:name "has role" ;
+.
+
+<https://kurrawong.ai>
+    schema:name
+        "Kurrawong AI" ,
+        "KurrawongAI" ;
+.
+
+<https://linked.data.gov.au/def/cn/isNameFor>
+    schema:name "is name for"@en ;
+.
+
+<https://linked.data.gov.au/def/reg-statuses/experimental>
+    schema:description "An entry that has been accepted into the register temporarily and may be subject to change or withdrawal."@en ;
+    schema:name "experimental"@en ;
+.
+
+<https://linked.data.gov.au/org/qsi>
+    schema:name "Spatial Information Queensland"@en ;
+.
+
+<https://prez.dev/Manifest>
+    schema:name "Manifest" ;
+.
+
+<https://prez.dev/ManifestResourceRoles/CatalogueData>
+    schema:description "Data for the container, usually a Catalogue, including the identity of it and each item fo content" ;
+    schema:name "Catalogue Data" ;
+.
+
+<https://prez.dev/ManifestResourceRoles/CompleteCatalogueAndResourceLabels>
+    schema:description "All the labels - possibly including names, descriptions & seeAlso links - for the Catalogue and Resource objects" ;
+    schema:name "Complete Catalogue and Resource Labels" ;
+.
+
+<https://prez.dev/ManifestResourceRoles/ResourceData>
+    schema:description "Data for the content of the container" ;
+    schema:name "Resource Data" ;
+.
+
+schema:DataCatalog
+    schema:description "A collection of datasets." ;
+    schema:name "DataCatalog" ;
+.
+
+schema:additionalType
+    schema:description
+        """An additional type for the item, typically used for adding more specific types from external vocabularies in microdata syntax. This is a relationship between something and a class that the thing is in. Typically the value is a URI-identified RDF class, and in this case corresponds to the
+    use of rdf:type in RDF. Text values can be used sparingly, for cases where useful information can be added without their being an appropriate schema to reference. In the case of text values, the class label should follow the schema.org <a href="https://schema.org/docs/styleguide.html">style guide</a>.""" ,
+        "An additional type for the item, typically used for adding more specific types from external vocabularies"@en ;
+    schema:name
+        "additionalType" ,
+        "additional type"@en ;
+.
+
+schema:citation
+    schema:description "A citation or reference to another creative work, such as another publication, web page, scholarly article, etc." ;
+    schema:name "citation" ;
+.
+
+schema:codeRepository
+    schema:description "Link to the repository where the un-compiled, human readable code and related code is located (SVN, GitHub, CodePlex)." ;
+    schema:name "codeRepository" ;
+.
+
+schema:contentLocation
+    schema:description "The location depicted or described in the content. For example, the location in a photograph or painting." ;
+    schema:name "contentLocation" ;
+.
+
+schema:creator
+    schema:description "The creator/author of this CreativeWork. This is the same as the Author property for CreativeWork." ;
+    schema:name "creator" ;
+.
+
+schema:dateCreated
+    schema:description "The date on which the CreativeWork was created or the item was added to a DataFeed." ;
+    schema:name "dateCreated" ;
+.
+
+schema:dateModified
+    schema:description "The date on which the CreativeWork was most recently modified or when the item's entry was modified within a DataFeed." ;
+    schema:name "dateModified" ;
+.
+
+schema:description
+    schema:description
+        "A description of the item" ,
+        "A description of the item." ;
+    schema:name "description" ;
+.
+
+schema:hasPart
+    schema:description
+        "Indicates an item or CreativeWork that is part of this item, or CreativeWork (in some sense)." ,
+        "Indicates a Resource that is part of this item"@en ;
+    schema:name
+        "hasPart" ,
+        "member"@en ;
+.
+
+schema:mainEntity
+    schema:description "Indicates the primary entity described in some page or other CreativeWork." ;
+    schema:name "mainEntity" ;
+.
+
+schema:name
+    schema:description
+        "The name of the item" ,
+        "The name of the item." ,
+        "The name of the item"@en ;
+    schema:name
+        "name" ,
+        "name"@en ;
+.
+
+schema:publisher
+    schema:description "The publisher of the creative work." ;
+    schema:name "publisher" ;
+.
+
+schema:value
+    schema:description "The value of a [[QuantitativeValue]] (including [[Observation]]) or property value node.\\n\\n* For [[QuantitativeValue]] and [[MonetaryAmount]], the recommended type for values is 'Number'.\\n* For [[PropertyValue]], it can be 'Text', 'Number', 'Boolean', or 'StructuredValue'.\\n* Use values from 0123456789 (Unicode 'DIGIT ZERO' (U+0030) to 'DIGIT NINE' (U+0039)) rather than superficially similar Unicode symbols.\\n* Use '.' (Unicode 'FULL STOP' (U+002E)) rather than ',' to indicate a decimal point. Avoid using these symbols as a readability separator." ;
+    schema:name "value" ;
+.
+
+schema:version
+    schema:description "The version of the CreativeWork embodied by a specified resource." ;
+    schema:name "version" ;
+.
+
